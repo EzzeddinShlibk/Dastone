@@ -1,18 +1,26 @@
 ﻿<div class="container-fluid">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Page-Title -->
     <div class="row">
         <div class="col-sm-12">
             <div class="page-title-box">
                 <div class="row">
                     <div class="col">
-                        <h4 class="page-title">أعضاء الفريق</h4>
+                        <h4 class="page-title">
+                            أعضاء الفريق
+                            <i class="fa fa-users"></i>
+
+                        </h4>
                     </div><!--end col-->
                     <div class="col-lg-6 text-end">
                         <div class="text-end">
                             <ul class="list-inline">
 
                                 <li class="list-inline-item">
-                                    <button type="button" class="btn btn-soft-primary btn-sm">إضافة مستخدم جديد</button>
+                                    <button type="button" class="btn btn-soft-primary btn-sm">
+                                        إضافة مستخدم جديد
+                                        <i class="fa fa-user-plus"></i>
+                                    </button>
                                 </li>
                             </ul>
 
@@ -25,33 +33,150 @@
                     <div class="card">
                         <div class="card-body">
                             <div class="media mb-3">
-                                <img src="~/images/widgets/project2.png" alt="" class="thumb-md ">
+                                <img src="~/images/widgets/followers.png" alt="flolwers" height="100" width="100" >
+                                <div class="row ms-2">
+                                    <h5 class="me-0">إستخدم رمز الفريق هذا لدعوة الأشخاص الى فريقك</h5>
+                                    <div class="input-group input-group-lg">
+                                        <span class="input-group-text " id="inputGroup-sizing-lg ">
+                                            نسخ رابط الدعوة  &#160;
+                                            <i class="fa fa-clone"></i>
+                                            </span>
+                                        <input type="text" placeholder="91109" class="form-control  " aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" style="width:min-content" >
+                                    </div>
+                                </div>
                                 <div class="media-body align-self-center text-truncate ms-3">
-                          @*          <h4 class="m-0 fw-semibold text-dark font-15">مشروع 1 </h4>
-                                    <p class="text-muted  mb-0 font-13"><span>مشروع جديد</span></p>*@
-
                                 </div><!--end media-body-->
                             </div>
-                           @* <hr class="hr-dashed">
-                            <div>
-                                <button class=" btn bg-primary text-white me-1">استعادة</button>
-                                <button class=" btn  text-white me-1" style="background-color:#D2042D">حذف</button>
-                            </div><!--end task-box-->*@
+
                         </div><!--end card-body-->
                     </div><!--end card-->
-                </div><!--end col-->
-            </div><!--end page-title-box-->
+                    <h5>طلبات الإنضمام</h5>
+                    <hr class="hr-dashed">
+                    <div class="table-responsive">
+                        <table class="table mb-0 table-centered">
+                            <thead>
+                                <tr>
+                                    <th>الاسم</th>
+                                    <th>Email</th>
+                                    <th>الهاتف</th>
+                                    <th>الصلاحية</th>
+                                    <th>العمليات</th>
 
-        </div><!--end col-->
-    </div><!--end row-->
-    <!-- end page title end breadcrumb -->
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="center">
+                                        <img src="~/images/users/profile.png" alt=""
+                                             class="rounded-circle thumb-xs me-1">
+                                        AliShaabanAltir
+                                    </td>
+                                    <td>AliShaabanAltir@gmail.com</td>
+                                    <td>091000000</td>
+                                    <td>عضو</td>
+                                    <td>
+                                        <button type="button" class="btn btn-success">
+                                            قبول
+                                            <i class="fa fa-check"></i>
+                                        </button> <button type="button" class="btn btn-danger">
+                                            رفض
+                                            <i class="fa fa-close"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h5>أعضاء الفريق</h5>
+                        <hr class="hr-dashed">
+                        <div class="table-responsive">
+                            <table class="table mb-0 table-centered">
+                                <thead>
+                                    <tr>
+                                        <th>الاسم</th>
+                                        <th>Email</th>
+                                        <th>الهاتف</th>
+                                        <th>الصلاحية </th>
+                                        <th>العمليات</th>
 
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="center">
+                                            <img src="~/images/users/human (2).png" alt=""
+                                                 class="rounded-circle thumb-xs me-1">
+                                            Dr.Asma Elassar
+                                        </td>
+                                        <td>AsmaElassar@gmail.com</td>
+                                        <td>091000000</td>
+                                        <td>مدير</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary">
+                                                تعديل
+                                                <i class="fa fa-edit"></i>
+                                            </button> <button type="button" class="btn btn-danger">
+                                                حذف
+                                                <i class="fa fa-trash"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center">
+                                            <img src="~/images/users/profile.png" alt=""
+                                                 class="rounded-circle thumb-xs me-1">
+                                            عزالدين ميلاد
+                                        </td>
+                                        <td>ezzomilad@gmail.com</td>
+                                        <td>091000000</td>
+                                        <td>عضو</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary">
+                                                تعديل
+                                                <i class="fa fa-edit"></i>
+                                            </button> <button type="button" class="btn btn-danger">
+                                                حذف
+                                                <i class="fa fa-trash"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center">
+
+                                            <img src="~/images/users/profile.png" alt=""
+                                                 class="rounded-circle thumb-xs me-1">
+                                            أيمن مادي
+                                        </td>
+                                        <td>aymenmadi@gmail.com</td>
+                                        <td>091000000</td>
+                                        <td>عضو</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary">
+                                                تعديل
+                                                <i class="fa fa-edit"></i>
+                                            </button> <button type="button" class="btn btn-danger">
+                                                حذف
+                                                <i class="fa fa-trash"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                            <!--end /table-->
+                        </div>
+                    </div><!--end col-->
+                </div><!--end page-title-box-->
+
+            </div><!--end col-->
+        </div><!--end row-->
+        <!-- end page title end breadcrumb -->
+
+    </div>
 </div>
-
 @section styles{
 
-}
+    }
 
 @section scripts{
 
-}
+    }
