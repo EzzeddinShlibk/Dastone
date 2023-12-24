@@ -3,7 +3,8 @@
 *@
 @{
 }
-<div class="container-fluid">
+
+
     <!-- Page-Title -->
     <div class="row">
         <div class="col-sm-12">
@@ -46,7 +47,42 @@
                 <hr class="hr-dashed">
                 <div>
                     <button class=" btn bg-primary text-white me-1" >استعادة</button>
-                    <button class=" btn  text-white me-1" style="background-color:#D2042D">حذف</button>
+                    <button class=" btn  text-white me-1" style="background-color:#D2042D" data-bs-toggle="modal" data-bs-target="#myModal">حذف</button>
+
+
+                    <!-------------the model------------------------------->
+                    <div class="modal" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- The Modal -->
+
+                    <div class="modal-header">
+                        <h4 class="modal-title" style="font-family:Cairo">حذف مشروع</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                            <div class="modal-body">
+                                هل أنت متأكد من إزالة هذا العنصر بشكل دائم
+                            </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">إلغاء</button>
+
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">موافق</button>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+                   <!------------------------------------end of model---------------------------------------------->
+
+
+
+
                 </div><!--end task-box-->
             </div><!--end card-body-->
         </div><!--end card-->
