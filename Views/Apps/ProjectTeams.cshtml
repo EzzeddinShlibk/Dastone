@@ -111,13 +111,114 @@
                                         <td>091000000</td>
                                         <td>مدير</td>
                                         <td>
-                                            <button type="button" class="btn btn-primary">
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
                                                 تعديل
                                                 <i class="fa fa-edit"></i>
-                                            </button> <button type="button" class="btn btn-danger">
+                                            </button>
+
+
+                                            <!-------------the model------------------------------->
+                                            <div class="modal" id="myModal" >
+                                                <div class="modal-dialog" >
+                                                    <div class="modal-content" >
+
+                                                        <!-- The Modal -->
+
+                                                        <div class="modal-header">
+                                                            <h4 class="modal-title" style="font-family:Cairo">إدارة المستخدمين</h4>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                        </div>
+
+                                                        <form style ="padding:10px 10px;">
+                                                            <div class="mb-3">
+                                                                <label for="exampleInputEmail1" class="form-label">الاسم</label>
+                                                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="exampleInputPassword1" class="form-label">الإيميل</label>
+                                                                <input type="email" class="form-control" id="exampleInputPassword1">
+                                                            </div>
+
+                                                            <div class="mb-3">
+                                                                <label for="exampleInputPassword1" class="form-label">الهاتف</label>
+                                                                <input type="tel" class="form-control" id="exampleInputPassword1">
+                                                            </div>
+
+
+
+                                                            <div class="mb-3">
+                                                                <label for="exampleInputPassword1" class="form-label">كلمة المرور</label>
+                                                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                                            </div>
+
+                                                            <div class="mb-3">
+                                                                <label for="exampleInputPassword1" class="form-label">تأكيد كلمة المرور</label>
+                                                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                                            </div>
+
+
+                                                            <div class="mb-3">
+                                                                <label for="exampleInputPassword1" class="form-label">نوع المستخدم</label>
+                                                                <input type="text" class="form-control" id="exampleInputPassword1">
+                                                            </div>
+
+
+
+
+
+                                                        </form>
+
+
+
+
+                                                        <!-- Modal footer -->
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">تعديل</button>
+
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <!------------------------------------end of model---------------------------------------------->
+
+                                            <button type="button" class="btn btn-danger"  data-bs-toggle="modal"  data-bs-target="#myModal2">
                                                 حذف
                                                 <i class="fa fa-trash"></i>
                                             </button>
+
+                                            <!-------------the model------------------------------->
+                            <div class="modal" id="myModal2">
+                               <div class="modal-dialog">
+                                       <div class="modal-content">
+
+                                     <!-- The Modal -->
+
+                                      <div class="modal-header">
+                                        <h4 class="modal-title" style="font-family:Cairo">حذف عضو</h4>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                             </div>
+
+                                            <div class="modal-body">
+                                                هل تريد تأكيد عملية الحذف؟
+                                              </div>
+
+                                       <!-- Modal footer -->
+                                         <div class="modal-footer">
+                                           <button type="button" class="btn btn-danger" data-bs-dismiss="modal">إلغاء</button>
+
+                                          <button type="button" class="btn btn-success" data-bs-dismiss="modal">موافق</button>
+
+                                             </div>
+
+                                              </div>
+                                              </div>
+                                            </div>
+
+                                            <!------------------------------------end of model---------------------------------------------->
                                         </td>
                                     </tr>
                                     <tr>
