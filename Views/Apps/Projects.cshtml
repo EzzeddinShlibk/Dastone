@@ -35,7 +35,10 @@
                             <button type="button" class="btn btn-soft-primary btn-sm"><i class="fas fa-filter"></i></button>
                         </li>
                         <li class="list-inline-item">
-                            <button type="button" class="btn btn-soft-primary btn-sm">إضافة مشروع جديد</button>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-soft-primary btn-sm">
+                                إضافة مشروع جديد
+                          
+                            </button>
                         </li>
                     </ul>
                 </div>
@@ -276,7 +279,51 @@
                     </div><!--end card-body-->
                 </div><!--end card-->
             </div><!--end col-->
+            <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
 
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title" style="font-family:Cairo">إضافة مشروع</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <div class="mb-3">
+                                <label for="projectName" class="form-label">الإسم</label>
+                                <input type="text" class="form-control" id="projectName" title="أدخل إسم المشروع">
+                            </div>
+                            <div class="mb-3">
+                                <label for="projectDescription" class="form-label">الوصف</label>
+                                <textarea class="form-control" id="projectDescription" title="وصف للمشروع" rows="3"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="startDate" class="form-label">تاريخ البداية</label>
+                                <input type="date" class="form-control" id="startDate">
+                            </div>
+                            <div class="mb-3">
+                                <label for="endDate" class="form-label">تاريخ النهاية</label>
+                                <input type="date" class="form-control" id="endDate">
+                            </div>
+                            <div class="mb-3">
+                                <label for="userInput" class="form-label">إضافة المستخدمين</label>
+                                <select multiple class="form-control" id="userInput">
+                                    <!-- خيارات المستخدمين تضاف هنا -->
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">إضافة</button>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
 
 
 
